@@ -29,8 +29,8 @@ Criar um modelo conceitual que represente as principais entidades e relacionamen
 
 ### 📁 Arquivos
 
-- `Modelo_E-Commerce.mwb`: Diagrama conceitual no Workbench
-- `Modelo_E-Commerce.sql`: Script SQL gerado via Forward Engineer
+- `Esquema-E-Commerce.mwb`: Diagrama conceitual no Workbench
+- `Esquema-E-Commerce.sql`: Script SQL gerado via Forward Engineer
 
 ---
 
@@ -59,8 +59,8 @@ Modelar um sistema de controle e gerenciamento de ordens de serviço em uma ofic
 
 ### 📁 Arquivos
 
-- `Modelo_Oficina.mwb`: Diagrama conceitual no Workbench
-- `Modelo_Oficina.sql`: Script SQL gerado via Forward Engineer
+- `Esquema-Oficina.mwb`: Diagrama conceitual no Workbench
+- `Esquema-Oficina.sql`: Script SQL gerado via Forward Engineer
 
 ---
 
