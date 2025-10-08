@@ -1,6 +1,6 @@
-# 📦 Projeto de Banco de Dados – E-Commerce & Oficina Mecânica
+# 📦 Projeto de Banco de Dados – E-Commerce, Oficina Mecânica & Conceitual
 
-Este repositório reúne dois projetos desenvolvidos como parte dos desafios da DIO, com foco em modelagem conceitual e lógica de banco de dados utilizando o MySQL Workbench.
+Este repositório reúne três projetos desenvolvidos como parte dos desafios da DIO, com foco em modelagem conceitual e lógica de banco de dados utilizando o MySQL Workbench e scripts SQL.
 
 ---
 
@@ -23,38 +23,6 @@ Modelar e implementar um sistema de banco de dados para uma plataforma de vendas
 - Um pedido pode conter vários produtos.
 - O relacionamento entre pedidos e produtos é resolvido via `ItemPedido`.
 
-### 🧱 Modelagem Lógica
-
-O modelo lógico foi implementado com:
-
-- Chaves primárias e estrangeiras
-- Tipos de dados apropriados (INT, VARCHAR, DATE, DECIMAL)
-- Constraints como `CHECK`, `UNIQUE`, `NOT NULL`
-- Relacionamentos 1:N e N:N devidamente mapeados
-
-### 🧪 Consultas SQL
-
-O projeto inclui consultas SQL com:
-
-- Recuperações simples (`SELECT`)
-- Filtros (`WHERE`)
-- Atributos derivados (ex: soma de valores)
-- Ordenações (`ORDER BY`)
-- Agrupamentos com filtros (`GROUP BY` + `HAVING`)
-- Junções entre tabelas (`JOIN`)
-
-Exemplos de perguntas respondidas:
-
-- Quantos pedidos foram feitos por cada cliente?
-- Qual o valor total calculado por pedido?
-- Qual o status e rastreio de cada entrega?
-- Relação entre clientes, pedidos e produtos comprados
-
-### 🛠️ Ferramentas Utilizadas
-
-- MySQL Workbench
-- GitHub
-
 ### 📁 Arquivos
 
 - `Esquema-E-Commerce.mwb`: Diagrama conceitual no Workbench
@@ -70,7 +38,7 @@ Exemplos de perguntas respondidas:
 Modelar um sistema de controle e gerenciamento de ordens de serviço em uma oficina mecânica, contemplando:
 
 - Clientes e seus veículos
-- Ordens de serviço com data, status e valor
+- Ordens de serviço com data, status, valor e autorização
 - Equipes de mecânicos responsáveis pela execução
 - Serviços e peças utilizados em cada OS
 
@@ -81,19 +49,37 @@ Modelar um sistema de controle e gerenciamento de ordens de serviço em uma ofic
 - A OS inclui serviços e peças, com valores calculados a partir de uma tabela de referência.
 - O cliente autoriza a execução dos serviços antes da conclusão.
 
-### 🛠️ Ferramentas Utilizadas
+### 📁 Arquivos
 
-- MySQL Workbench
-- GitHub
+- `modelo-logico-oficina.sql`: Script SQL com criação das tabelas e relacionamentos
+- `dados-teste.sql`: Inserção de dados fictícios para testes
+- `consultas.sql`: Consultas SQL com SELECT, WHERE, JOIN, GROUP BY, HAVING, ORDER BY
+
+---
+
+## 🧠 Projeto 3 – Esquema Conceitual de Banco de Dados
+
+### 🎯 Objetivo
+
+Criar modelos conceituais utilizando o MySQL Workbench para representar cenários de negócio com entidades, atributos e relacionamentos.
 
 ### 📁 Arquivos
 
-- `Esquema-Oficina.mwb`: Diagrama conceitual no Workbench
-- `Esquema-Oficina.sql`: Script SQL gerado via Forward Engineer
+- `Esquema-Conceitual-E-Commerce.mwb`
+- `Esquema-Conceitual-Oficina.mwb`
+
+---
+
+## 🛠️ Ferramentas Utilizadas
+
+- MySQL Workbench
+- VS Code
+- GitHub
 
 ---
 
 ## 👤 Autor
 
 **Julio Oliveira** – Desafio DIO
+
 
