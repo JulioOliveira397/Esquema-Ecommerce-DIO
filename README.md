@@ -1,6 +1,6 @@
-# 📦 Projeto Conceitual de Banco de Dados – E-Commerce & Oficina Mecânica
+# 📦 Projeto de Banco de Dados – E-Commerce & Oficina Mecânica
 
-Este repositório reúne dois projetos desenvolvidos como parte dos desafios da DIO, com foco em modelagem conceitual de banco de dados utilizando o MySQL Workbench.
+Este repositório reúne dois projetos desenvolvidos como parte dos desafios da DIO, com foco em modelagem conceitual e lógica de banco de dados utilizando o MySQL Workbench.
 
 ---
 
@@ -8,7 +8,7 @@ Este repositório reúne dois projetos desenvolvidos como parte dos desafios da 
 
 ### 🎯 Objetivo
 
-Criar um modelo conceitual que represente as principais entidades e relacionamentos de um sistema de vendas online, incluindo:
+Modelar e implementar um sistema de banco de dados para uma plataforma de vendas online, contemplando:
 
 - Clientes (Pessoa Física ou Jurídica)
 - Pedidos e Produtos
@@ -21,6 +21,34 @@ Criar um modelo conceitual que represente as principais entidades e relacionamen
 - Um cliente pode ter várias formas de pagamento.
 - Cada pedido possui uma entrega com status e código de rastreio.
 - Um pedido pode conter vários produtos.
+- O relacionamento entre pedidos e produtos é resolvido via `ItemPedido`.
+
+### 🧱 Modelagem Lógica
+
+O modelo lógico foi implementado com:
+
+- Chaves primárias e estrangeiras
+- Tipos de dados apropriados (INT, VARCHAR, DATE, DECIMAL)
+- Constraints como `CHECK`, `UNIQUE`, `NOT NULL`
+- Relacionamentos 1:N e N:N devidamente mapeados
+
+### 🧪 Consultas SQL
+
+O projeto inclui consultas SQL com:
+
+- Recuperações simples (`SELECT`)
+- Filtros (`WHERE`)
+- Atributos derivados (ex: soma de valores)
+- Ordenações (`ORDER BY`)
+- Agrupamentos com filtros (`GROUP BY` + `HAVING`)
+- Junções entre tabelas (`JOIN`)
+
+Exemplos de perguntas respondidas:
+
+- Quantos pedidos foram feitos por cada cliente?
+- Qual o valor total calculado por pedido?
+- Qual o status e rastreio de cada entrega?
+- Relação entre clientes, pedidos e produtos comprados
 
 ### 🛠️ Ferramentas Utilizadas
 
@@ -31,6 +59,7 @@ Criar um modelo conceitual que represente as principais entidades e relacionamen
 
 - `Esquema-E-Commerce.mwb`: Diagrama conceitual no Workbench
 - `Esquema-E-Commerce.sql`: Script SQL gerado via Forward Engineer
+- `consultas.sql`: Consultas SQL complexas para testes e validação
 
 ---
 
@@ -67,3 +96,4 @@ Modelar um sistema de controle e gerenciamento de ordens de serviço em uma ofic
 ## 👤 Autor
 
 **Julio Oliveira** – Desafio DIO
+
